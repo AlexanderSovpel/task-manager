@@ -55854,6 +55854,11 @@ var NewTask = function (_Component) {
         description: this.state.description
       }).then(function (response) {
         _this2.props.onSubmit(response.data);
+        _this2.setState({
+          name: '',
+          status: 'todo',
+          description: ''
+        });
       }).catch(function (error) {
         return console.error(error);
       });

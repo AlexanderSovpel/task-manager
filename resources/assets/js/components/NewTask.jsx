@@ -25,6 +25,11 @@ class NewTask extends Component {
       description: this.state.description
     }).then(response => {
       this.props.onSubmit(response.data);
+      this.setState({
+        name: '',
+        status: 'todo',
+        description: ''  
+      });
     })
       .catch(error => console.error(error));
 
