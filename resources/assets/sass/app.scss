@@ -1,0 +1,25 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  margin: 0px;
+  height: 100vh;
+}
+
+.add-task {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+
+.task-list {
+  max-height: 80vh;
+  overflow-y: auto;
+}
